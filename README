@@ -1,0 +1,58 @@
+# Cinemalatte — Registro y pasos completos
+Cinemalatte es una página web dedicada a la venta de componentes electrónicos.  
+Este proyecto utiliza *Node.js, **Express* y *MySQL* 
+
+
+Si lo estás clonando desde GitHub:
+
+git clone https://github.com/Sergio27mijares/CinemaLatte-.git
+
+
+Desde la carpeta del proyecto, ejecuta en la terminal:
+
+npm install
+
+
+Esto instalará:
+
+express
+
+mysql
+
+express-myconnection
+
+morgan
+
+nodemon
+
+
+Abre MySQL Workbench o la terminal de MySQL.
+
+Ejecuta el script llamado DBCINEMALATTEcinemalatte.sql que se encuentra en la carpeta /db.
+
+Esto creará:
+
+La base de datos DBCINEMALATTE
+
+El usuario DBCINEMALATTE con contraseña 1234
+
+Las tablas son: clientes, proveedores, eventos, productos, ventas, detalle_venta, membresias, registro_eventos
+
+
+El archivo app.js ya contiene la configuración:
+
+user: 'DBCINEMALATTE',
+password: '1234',
+database: 'DBCINEMALATTE',
+host: 'localhost',
+port: 3306
+
+
+Asegúrate de que el servidor MySQL esté iniciado antes de ejecutar el proyecto.
+
+
+Para iniciar el servidor manualmente:
+
+node app.js
+
+npx nodemon app.js
